@@ -1,0 +1,77 @@
+@import url("./reset.css");
+
+:root {
+  --white: #fff;
+  --border: #b7b7b7;
+  --bg: #575757;
+  --red: #ee204d;
+  --blue: #007fff;
+  --blue-hover: #0f62b4;
+  --text: #474a51;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  height: 100vh;
+}
+
+.form {
+  width: 560px;
+  padding: 24px 32px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-title {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input {
+  padding: 12px 18px;
+  font-size: 18px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  outline: none;
+  margin: 8px 0 4px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  height: 14px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--red);
+}
+
+#button {
+  cursor: pointer;
+  padding: 12px 0;
+  background: var(--blue);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  transition: 0.2s ease;
+}
+
+#button:hover {
+  background: var(--blue-hover);
+}

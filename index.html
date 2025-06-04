@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello, JavaScript!</h1>
-  <script src="./js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Валидация форм в JavaScript</title>
+  </head>
+  <body>
+    <form class="form">
+      <h2 class="form-title">Регистрация</h2>
+      <div class="box">
+        <p class="label">Ваш никнейм:</p>
+        <input type="text" class="input" placeholder="Введите ваш никнейм" name="username" />
+        <span class="error" id="usernameError"></span>
+      </div>
+      <div class="box">
+        <p class="label">Ваша электронная почта:</p>
+        <input type="email" class="input" placeholder="Введите ваш e-mail" name="email" />
+        <span class="error" id="emailError"></span>
+      </div>
+      <div class="box">
+        <p class="label">Ваш пароль:</p>
+        <input type="password" class="input" placeholder="Введите ваш пароль" name="password" />
+        <span class="error" id="passwordError"></span>
+      </div>
+      <button id="button" type="submit">Отправить</button>
+    </form>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
